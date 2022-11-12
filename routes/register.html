@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VOTING SYSTEM - REGISTRATION</title>
+        <script src="../javascript/register.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            #demo,#demo1,#demo2,#demo3,#demo4
+            {   display: block;
+                background-color: black;
+                width: fit-content;
+                color: rgb(255, 255, 255);
+                font-size: 25;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="headersection">
+            <h1>ONLINE VOTING SYSTEM</h1>
+        </div>
+        <hr size="7" color="#ee00dd" width="50%">
+      
+        <div id="bodysection">
+            <form action="../api/register.php" method="post" enctype="multipart/form-data" name="form1">
+                <h2>REGISTRATION</h2>
+                <input type="text" id="name" name="name" placeholder="Enter Name" autocomplete="off" onblur="namefunction(document.form1.name.value)"><br><center><span id="demo"></span></center><br><br>
+                <input type="number" id="mobile" name="mobile" placeholder="Mobile Number" autocomplete="off" onblur="mobilefunction(document.form1.mobile.value)"><br><center><span id="demo1"></span></center><br><br>
+                <input id="vid" size="25" type="text" name="voterid" placeholder="Enrollment Number" autocomplete="off" onblur="enrollmentfunction(document.form1.voterid.value)"><br><center><span id="demo2"></span></center><br><br>
+                <input type="password" id="password" name="password" placeholder="Password" onblur="passwordfunction(document.form1.password.value)">
+                <input type="password" name="cpassword" placeholder="Confirm Password"><br><center><span id="demo3"></span></center><br><br>
+                <input id="address" size="40" type="text" name="address" placeholder="Address" autocomplete="off" onblur="addressfunction(document.form1.address.value)"><br><center><span id="demo4"></span></center><br><br>
+                <font face="Arial" color="white" size="5"><b> Upload image :</b> </font><input type="file" name="photo" accept="image/*"><br><br>
+                <font face="Arial" color="white" size="5"><b> Select Campus :</b> </font><Select name="area">
+                    <option value="0">--Select--</option>
+                    <option value="1">Srinagar</option>
+                    <option value="2">Pauri</option>
+                    <option value="3">Tehri</option>
+                </Select>&nbsp;&nbsp;
+               <font face="Arial" color="white" size="5"><b> Select Role :</b> </font><select name="role">
+                   <option value="0">--Select--</option>
+                    <option value="1">VOTER</option>
+                    <option value="2">GROUP</option>
+                </select><br><br>
+                <button type="submit" style="cursor: pointer;">REGISTER</button><br><br>
+                <font face="Arial" color="white" size="5"><b>Already User?</b> </font><a href="login.html">Login Here</a>
+            </form>
+        </div>
+        
+    </body>
+</html>

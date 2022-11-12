@@ -1,0 +1,60 @@
+body
+{
+    text-align: center;
+    background-image: url("flag.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+#headersection
+{
+    font-family: Arial;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size:x-large;
+    color: aliceblue;
+}
+h2
+{
+    font-size: xx-large;
+    color: aliceblue;
+}
+input, select
+{
+    padding: 8px;
+    border-radius: 11px;
+    font-size: large;
+    border: 4px solid black;
+}
+button
+{
+    display:inline-block;
+    font-size: 1.5em;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    background-color: #3498db;;
+    font-weight:300;
+    color:antiquewhite;
+    text-align:center;
+    transition: all 0.2s;
+}
+a:link,:visited
+{
+    color: rgb(249, 249, 6);
+    font-size: 24;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(255, 85, 0);
+    font-size: 32;
+    text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VOTING SYSTEM - LOGIN</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <div id="headersection">
+            <h1>ONLINE VOTING SYSTEM</h1>
+        </div>
+        
+        <hr size="7" color="#ee00dd" width="50%">
+
+        <div id="bodysection">
+            <form method="post" action="../api/login.php">
+
+                <h2>LOGIN</h2>
+    
+                <input type="text" name="voterid" placeholder="Enter Enrollment Number" autocomplete="off"><br><br>
+                
+                <input type="password" name="password" placeholder="Enter Password" autocomplete="off"><br><br>
+                
+                <font face="Arial" color="white" size="5"><b> Select Role :</b> </font><select name="role">
+                    <option value="1">VOTER</option>
+                    <option value="2">GROUP</option>
+                </select><br><br>
+    
+                <button type="submit" style="cursor: pointer;">LOGIN</button><br><br><br>
+    
+                <font face="Arial" color="white" size="5"><b>New User?</b> </font><a href="register.html">Register here</a>
+    
+            </form>
+        </div>
+        <br><br><br><br><br><br><br><br><a href="../analytic/analytic.html">VIEW ANALYTICS</a>
+    </body>
+</html>
